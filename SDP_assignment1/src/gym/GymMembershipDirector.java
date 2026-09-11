@@ -2,29 +2,29 @@ package gym;
 
 public class GymMembershipDirector {
 
-    public GymMembership constructStandartMorningPass(GymMembershipBuilder builder, String clientName){
+    public GymMembership constructStandardMorningPass(GymMembershipBuilder builder, String clientName){
         return builder
                 .setClientName(clientName)
                 .setDurationMonth(1)
-                .setAccessTier("STANDART")
+                .setAccessTier("STANDARD")
                 .setTimeSlot("Morning (07:00-12:00)")
                 .setHasPoolAccess(false)
                 .setGuestPasses(0)
                 .setFreezeDays(0)
                 .build();
     }
-    public GymMembership constructStandartFulldayPass(GymMembershipBuilder builder, String clientName){
+    public GymMembership constructStandardFullDayPass(GymMembershipBuilder builder, String clientName){
         return builder
                 .setClientName(clientName)
                 .setDurationMonth(3)
-                .setAccessTier("STANDART")
+                .setAccessTier("STANDARD")
                 .setTimeSlot("Full-Day")
                 .setHasPoolAccess(false)
                 .setGuestPasses(0)
                 .setFreezeDays(0)
                 .build();
     }
-    public GymMembership constructGoldFulldayPass(GymMembershipBuilder builder, String clientName){
+    public GymMembership constructGoldFullDayPass(GymMembershipBuilder builder, String clientName){
         return builder
                 .setClientName(clientName)
                 .setDurationMonth(6)
@@ -35,7 +35,7 @@ public class GymMembershipDirector {
                 .setFreezeDays(30)
                 .build();
     }
-    public GymMembership constructDiamondFulldayPass(GymMembershipBuilder builder, String clientName){
+    public GymMembership constructDiamondFullDayPass(GymMembershipBuilder builder, String clientName){
         return builder
                 .setClientName(clientName)
                 .setDurationMonth(12)

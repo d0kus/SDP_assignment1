@@ -1,6 +1,6 @@
 package gym;
 
-public class GymMembershipBuilder{
+public class GymMembershipBuilder {
 
     private static final int MIN_DURATION_MONTH = 1;
     private static final int MAX_DURATION_MONTH = 12;
@@ -8,7 +8,7 @@ public class GymMembershipBuilder{
 
     private String clientName;
     private int durationMonth = 1;
-    private String accessTier = "STANDART";
+    private String accessTier = "STANDARD";
     private String timeSlot = "Full-Day";
     private boolean hasPoolAccess = false;
     private int guestPasses = 0;
@@ -49,7 +49,7 @@ public class GymMembershipBuilder{
         return this;
     }
 
-    public String getClientName(){ return clientName;}
+    public String getClientName() { return clientName;}
     public int getDurationMonth() { return durationMonth; }
     public String getAccessTier() { return accessTier; }
     public String getTimeSlot() { return timeSlot; }
@@ -63,13 +63,13 @@ public class GymMembershipBuilder{
         }
         if (durationMonth < MIN_DURATION_MONTH || durationMonth > MAX_DURATION_MONTH){
             throw new IllegalStateException(
-                    "Duration must be between "+ MIN_DURATION_MONTH +" and "+MAX_DURATION_MONTH+" months"
+                    "Duration must be between " + MIN_DURATION_MONTH + " and " + MAX_DURATION_MONTH + " months"
             );
         }
-        if (guestPasses<0){
+        if (guestPasses < 0){
             throw new IllegalStateException("Guest passes cannot be negative");
         }
-        if (freezeDays<0){
+        if (freezeDays < 0){
             throw new IllegalStateException("Freeze days cannot be negative");
         }
     }
